@@ -23,7 +23,7 @@ node() {
                 '''
         }
 	 
-	stage('SonarQube analysis') {
+/*	stage('SonarQube analysis') {
    		 // requires SonarQube Scanner 2.8+
    		def scannerHome = tool 'sonar_scanner';
    		withSonarQubeEnv('sonarqube') {
@@ -39,7 +39,7 @@ node() {
  		   }
 		}
 
-
+*/
 
            stage('docker-build') {
 		sh '''
